@@ -1,0 +1,104 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    
+}
+body{
+    background-color: black;
+}
+
+nav :is(li){
+    display: inline-block;
+    
+}
+.info1{
+    padding: 20px;
+    line-height: 1.2em;
+    font-size: 1.2em;
+}
+
+#lnav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#lnav :is(li){
+    text-decoration: underline;
+}
+
+h5{
+    margin: 50px auto;
+    font-style: italic;
+    font-weight: 200;
+    text-align: center;
+    color: red;
+}
+
+#address{
+    height:60px;
+    width: 200px;
+    
+}
+#qali{
+    height:30px;
+    width: 200px;
+}
+
+h1{
+    text-align: center;
+}
+
+.main :is(label,input){
+    margin: 5px 5px;  
+    
+    
+}
+label{
+    position: relative;
+}
+
+#btn{
+    margin-top: 20px;
+    font-weight:900 ;
+    color: red;
+
+}
+
+.main{
+    margin: 10px auto;
+    width: 80%;
+    background-color: lightgrey;
+}
+
+#navbar{
+    text-align: center;  
+}
+#navbar :is(li){
+    text-decoration: underline;
+}
+
+#navbar li::after{
+    content:'┃';
+    float: right;
+    color: red;
+    padding-inline: 5px;
+    border: none; 
+     
+}
+
+#navbar.li:last-child::after{
+    display: none;
+}
+
+hr{
+    border: 2px solid red;
+    width: 80%;
+    margin-block: 10px;
+    margin-inline: auto;
+}
+
+h2,form,ul{
+    padding-left: 20px;
+}
